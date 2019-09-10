@@ -1,0 +1,126 @@
+PARAMETRES D'ACCES:
+L'adresse IPv4 du VPS est : 51.83.41.15
+L'adresse IPv6 du VPS est : 2001:41d0:0305:2100:0000:0000:0000:851b
+
+Le nom du VPS est : vps709135.ovh.net
+
+Le compte administrateur suivant a été configuré sur le VPS :
+Nom d'utilisateur : root
+Mot de passe :      mRWvr9Ea
+
+Nom d'utilisateur : root
+Mot de passe :      4cObyWCT
+
+Mot de passe :      hYNp4vuC
+
+*************************************
+
+Votre VPS vient d'être installé sous le système d'exploitation / distribution
+Ubuntu 16.04 Server (en version 64 bits)
+
+
+PARAMETRES D'ACCES:
+L'adresse IPv4 du VPS est : 51.83.45.16
+L'adresse IPv6 du VPS est : 2001:41d0:0305:2100:0000:0000:0000:899b
+
+Le nom du VPS est : vps709649.ovh.net
+
+Le compte administrateur suivant a été configuré sur le VPS :
+Nom d'utilisateur : root
+Mot de passe :      Rar9xNiu  // 51Z4XwsA // Mot de passe :      4RN0Ru6r
+
+
+PARAMETRES D'ACCES:
+L'adresse IPv4 du VPS est : 51.83.45.16
+L'adresse IPv6 du VPS est : 2001:41d0:0305:2100:0000:0000:0000:899b
+
+Le nom du VPS est : vps709649.ovh.net
+
+Le compte administrateur suivant a été configuré sur le VPS :
+Nom d'utilisateur : root
+Mot de passe :      RgEm72oM
+
+
+Le compte administrateur suivant a été configuré sur le VPS :
+Nom d'utilisateur : root
+Mot de passe :      2vbRRHiA
+
+Mot de passe :      66GVdZqq
+
+
+Mot de passe :      yZJT7baL
+
+Mot de passe :      uRdLe8kR
+
+Mot de passe :      xHv5rnOf
+
+**********************************************************
+<VirtualHost *:80>
+	ServerName 51.83.45.16
+	ServerAlias 51.83.45.16
+	DocumentRoot /var/www/
+	ErrorLog /var/log/httpd/error_log.51.83.45.16
+	TransferLog /var/log/httpd/access_log.51.83.45.16
+</VirtualHost> 
+
+
+**********************************
+vps709649.ovh.net
+
+
+nano /etc/httpd/conf.d/phpMyAdmin.conf
+nano /etc/httpd/conf/httpd.conf
+service httpd restart
+
+Deny from All
+
+********************************
+
+RewriteEngine on
+RewriteCond %{HTTP:X_Forwarded_Proto} !https
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+***************************************
+DEVICE="eth0:0"
+ONBOOT="yes"
+BOOTPROTO="static"
+IPADDR="51.83.45.16"
+NETMASK="255.255.255.255"
+BROADCAST="51.83.45.16"
+****************************************
+
+DEVICE=eth0
+BOOTPROTO=static
+BROADCAST=51.83.45.16
+IPADDR= 51.83.45.16
+NETMASK=255.255.255.255
+NETWORK= 51.83.45.16.0
+ONBOOT=yes
+NM_CONTROLLED=no
+*********************************************
+
+10.255.255.1 dev eth0
+default via 10.255.255.1 dev eth0
+
+******************************
+DEVICE="eth0"
+BOOTPROTO="dhcp"
+IPV6INIT="yes"
+NM_CONTROLLED="yes"
+ONBOOT="yes"
+TYPE="Ethernet"
+NOZEROCONF=1
+
+********************************
+
+sed -i -- "s/206.72.203.45/51.83.45.16/g" /var/www/app/manager/include/inc.left_menu.php;
+sed -i -- "s/206.72.203.45/51.83.45.16/g" /var/www/app/manager/include/inc.top_menu.php;
+
+sed -i -- "s/245142/jmfpqsd79wy/g" /var/www/app/scripts/bd.php;
+sed -i -- "s/245142/jmfpqsd79wy/g" /var/www/app/scripts/bdd.php;
+
+sed -i -- "s/206.72.203.45/51.83.45.16/g" /var/www/app/scripts/bd.php;
+sed -i -- "s/206.72.203.45/51.83.45.16/g" /var/www/app/scripts/bdd.php;
+
+************************************
+ $pass_crypte = crypt($_POST['pass']); // On crypte le mot de passe

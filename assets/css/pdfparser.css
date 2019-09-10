@@ -1,0 +1,70 @@
+.ui-datepicker-calendar {
+    display: none;
+    }
+
+#send_data
+{
+    display: none;
+}
+
+#datatable tr td:nth-child(6) , #datatable_users tr td:nth-child(6) {
+    text-align: center;
+}
+
+#voir-devis-modal table td
+{
+    width: 200px;
+}
+a#download_exc_cached {
+    display: none;
+}
+
+.etat_filtre {
+    width: inherit !important;
+}
+#datatable td {
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.select-div {
+    border: solid 1px grey;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.filtre-2 label, .filtre-2 input {
+    font-weight: normal;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.nopadding
+{
+    padding:0px !important;
+}
+.filtre-2.col-sm-12.nopadding {
+    margin-bottom: 12px;
+}
+input#min {
+    margin-right: 10px;
+}
+#commande_details, #commande_details label {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.coched
+{
+    background-color: lightcyan;
+}
+
+#motifs_details {
+    border: solid;
+    border-color: red;
+    padding: 10px 29px;
+    margin-bottom: 20px;
+}
